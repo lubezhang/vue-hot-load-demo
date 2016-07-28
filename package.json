@@ -1,0 +1,33 @@
+{
+  "name": "vue-hot-load-demo",
+  "version": "1.0.0",
+  "description": "Example using Webpack with vue-loader",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^1.0.26"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.11.6",
+    "css-loader": "^0.23.1",
+    "rimraf": "^2.5.4",
+    "vue-hot-reload-api": "^1.3.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.3",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "clean": "rimraf build",
+    "build-webpack": "webpack --display-modules --display-chunks --progress",
+    "build": "npm run clean && npm run build-webpack",
+    "dev": "webpack-dev-server --inline --hot"
+  },
+  "author": "",
+  "license": "ISC"
+}
